@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+restaurants = [
+  { name: 'CHez Jeannot', stars: 1, address: 'Vallon des Auffes' },
+  { name: 'CHez Michel', stars: 3, address: 'Rue des Catalans' },
+  { name: 'Mc Do', stars: 1, address: 'Canebière' }
+]
+
+
+restaurants.each do |restaurant|
+  Restaurant.create!(restaurant)
+end
